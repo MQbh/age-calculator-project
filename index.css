@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0, 0%, 94%);
+}
+
+form {
+  display: grid;
+}
+
+.inputs-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 850px;
+}
+
+.inputs-div label {
+  display: grid;
+  font-weight: 700;
+  color: hsl(0, 1%, 44%);
+  font-size: 11px;
+  gap: 10px;
+  letter-spacing: 4px;
+}
+
+.inputs-div input {
+  width: 110px;
+  height: 50px;
+  padding-left: 10px;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 4px;
+  font-size: 32px;
+  font-weight: 700;
+    &&::placeholder{
+      padding-left: 10px;
+      font-size: 25px;
+      font-weight: 700;
+    }
+    &:focus {
+      outline: 1px solid hsl(259, 100%, 65%);
+    }
+}
+
+
+.buuton-div {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  border: 1px solid hsl(259, 100%, 65%);
+  border-radius: 40px;
+  background-color: hsl(259, 100%, 65%);
+  cursor: pointer;
+   &:hover{
+    background-color: black;
+    border: 1px solid black;
+   }
+}
+
+button svg {
+  height: 30px;
+  pointer-events: none;
+}
+
+.container {
+  display: grid;
+  place-content: center;
+  margin-top: 100px;
+}
+
+.p-div {
+  margin-top: -50px;
+  display: grid;
+  place-content: center;
+}
+
+p {
+  font-size: 90px;
+  font-weight: 800;
+  margin: -10px;
+}
+
+p span {
+  color: hsl(259, 100%, 65%);
+}
+
+.attribution {
+  margin-top: 25px;
+}
+
+.error {
+  border: 1px solid hsl(0, 100%, 67%);
+}
+
+.label-error {
+  color: hsl(0, 100%, 67%);
+}
+
+.error-msg-day,
+.error-msg-month,
+.error-msg-year {
+  font-size: 11px;
+  font-weight: 200;
+  color: hsl(0, 100%, 67%);
+  margin-left: 4px;
+  letter-spacing: 0;
+}
+
+@media (max-width:500px){
+  .inputs-div input {
+    width: 80px;
+    height: 50px;
+    font-size: 25px;
+    padding-left: 5px;
+    &&::placeholder{
+      padding-left: 5px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+  .buuton-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .buuton-div button {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+  }
+
+  .buuton-div button svg {
+    height: 30px;
+    width: 30px;
+  }
+
+  .p-div {
+    margin-top: 20px;
+  }
+
+  p {
+    font-size: 50px;
+    font-weight: 800;
+    margin: 0;
+  }
+
+}
