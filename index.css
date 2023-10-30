@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,200;1,700&display=swap');
 *{
   font-family: 'Poppins', sans-serif;
 }
@@ -90,6 +90,7 @@ button svg {
 
 p {
   font-size: 90px;
+  font-style: italic;
   font-weight: 800;
   margin: -10px;
 }
@@ -114,6 +115,7 @@ p span {
 .error-msg-month,
 .error-msg-year {
   font-size: 11px;
+  font-style: italic;
   font-weight: 200;
   color: hsl(0, 100%, 67%);
   margin-left: 4px;
